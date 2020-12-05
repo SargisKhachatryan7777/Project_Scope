@@ -1,0 +1,77 @@
+body{
+    background-color: lightgray;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.new{
+    color: green;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.new{
+    background-color: green;
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.new {
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: fixed;
+    right: 1172px;
+    top: 16%;
+    padding: 21px;
+    height: 20px;
+    width: 44px;
+}
+.userPic{padding: 5px; /* Поля вокруг текста */
+    float: left; /* Обтекание по правому краю */
+    width: 100px;}
+
+.img {/* Поля вокруг текста */
+    height: 100px; /* Обтекание по правому краю */
+    width: 100px; /* Ширина слоя */
+}
+.name {
+    padding: 5px; /* Поля вокруг текста */
+    width: 50px; /* Ширина слоя */
+    float: left; /* Обтекание по правому краю */
+}
+.link {
+    clear: left; /* Отмена обтекания */
+}
+img{
+    width: 48px;
+    height: 26px;}
+.table{
+    float: left;
+    width: 1000px;
+    margin-left: 250px;
+    margin-top: -215px;
+}
+
+.tr{
+    background-color: forestgreen;
+}
+/*.new:hover {*/
+/*    background-color: #555;*/
+/*}*/
+
+/*.new:active {*/
+/*    background-color: black;*/
+/*}*/
+
+/*.new:visited {*/
+/*    background-color: #ccc;*/
+/*}*/

@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/project_scope?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+file:
+  upload:
+    dir: C:\\Users\\User\\IdeaProjects\\project-scope\\upload
+
+logging:
+  file:
+    path: C:\\Users\\User\\IdeaProjects\\project-scope\\log
+    max-size: 1MB
+  level:
+    root: info

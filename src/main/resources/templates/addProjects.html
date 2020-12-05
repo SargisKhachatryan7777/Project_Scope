@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Register Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <!-- Custom Theme files -->
+    <link href="/loginPageStyle.css" rel="stylesheet" type="text/css" media="all"/>
+    <!-- //Custom Theme files -->
+    <!-- web font -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- //web font -->
+</head>
+<body>
+<!-- main -->
+<div class="main-w3layouts wrapper">
+    <h1>ADD PROJECTS</h1>
+    <div class="main-agileinfo">
+        <div class="agileits-top">
+            <form action="/project" method="post">
+                <input class="text" type="text" name="name" placeholder="Project Name"><br>
+                <!--                <input class="text" type="date" name="date" placeholder="Date" required="">-->
+                <input class="text" type="date" name="deadline">
+                <div  th:each="member: ${users}">
+                    <input type="checkbox" name="members" th:value="${member.name}" th:id="${member.name}">
+                    <label th:for="${member.name}"th:text="${member.name}"></label>
+                </div>
+                <input type="number" name="hours">
+                <div class="clear"></div>
+        <input type="submit" value="Add">
+        </form>
+    </div>
+</div>
+</body>
+</html>
